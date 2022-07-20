@@ -3,4 +3,6 @@ Projetos da Disciplina de Linguagem de Programação Funcional do Semestre 2022.
 
 Aqui estarão armazenados todos os programas desenvolvidos na disciplina.
 
+Eu fiz uma modificação.
+
 Luis Carlos.

@@ -1,7 +1,14 @@
 
 class RelogioI(var hora:Int, var minutos:Int) {
     override fun toString() : String {
-        return "Hora($hora : $minutos)";
+         if (minuto <=9 && hora <=9 )
+            return "Hora(0$hora : 0$minuto)"
+        else if(minuto > 9 && hora <=9  )
+            return "Hora(0$hora : $minuto)"
+        else if (minuto <=9 && hora >9)
+            return  "Hora($hora : 0$minuto)"
+        else
+            return "Hora($hora : $minuto)"
     }
     fun copia() : RelogioI { 
         return RelogioI(hora,minutos)
@@ -22,7 +29,14 @@ fun tick(r:RelogioI) {
 
 class RelogioF(val hora:Int, val minutos:Int) {
     override fun toString() : String {
-        return "Hora($hora : $minutos)";
+        if (minuto <=9 && hora <=9 )
+            return "Hora(0$hora : 0$minuto)"
+        else if(minuto > 9 && hora <=9  )
+            return "Hora(0$hora : $minuto)"
+        else if (minuto <=9 && hora >9)
+            return  "Hora($hora : 0$minuto)"
+        else
+            return "Hora($hora : $minuto)"
     }
     
 }
